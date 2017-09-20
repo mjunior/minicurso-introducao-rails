@@ -1,0 +1,17 @@
+<h1>Suas tarefas</h1>
+
+<table border="1">
+  
+  <thead>
+    <th>Titulo</th>
+    <th>Descrição</th>
+  </thead>
+
+  <% @tarefas.each do |tarefa| %>
+    <tr>
+      <td> <%= tarefa.title %> </td>
+      <td> <%= tarefa.description %>  </td>
+    </tr>       
+  <% end %>
+
+</table>
